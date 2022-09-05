@@ -34,6 +34,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 textarea {
@@ -164,10 +166,26 @@ textarea {
 }
 
 .container {
-  margin: 0 auto;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .benefits {
@@ -175,12 +193,7 @@ textarea {
   padding-bottom: 94px;
 }
 .benefits .benefits-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.benefits .benefits-list .benefits-item + .benefits-item {
-  margin-left: 30px;
+  width: 100%;
 }
 .benefits-features {
   margin-top: 0px;
@@ -198,8 +211,6 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  max-width: 270px;
-  max-height: 75px;
 }
 
 .background-icon {
@@ -213,8 +224,6 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
   background-color: var(--promo-background-color);
   border-radius: 4px;
 }
