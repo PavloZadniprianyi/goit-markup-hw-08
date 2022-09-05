@@ -1,0 +1,27 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+img {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button,
+.modal-close-btn {
+  cursor: pointer;
+}

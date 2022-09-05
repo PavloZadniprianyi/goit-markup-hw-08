@@ -1,0 +1,36 @@
+.footer-address {
+  font-style: normal;
+
+  @include animation;
+}
+
+.footer-list .footer-item + .footer-item {
+  margin-top: 9px;
+}
+
+.footer-link-adress {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+
+  @include animation;
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+
+.footer-mail,
+.footer-tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  @include animation;
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
